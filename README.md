@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# devTemilorun — Personal Portfolio v2
 
-## Getting Started
+A fast, modern personal portfolio built with Next.js 16 and React 19. Showcases my work as a Full Stack Developer — projects, tech stack, and a working contact form, all in one place.
 
-First, run the development server:
+Live site: (https://temilorun.vercel.app)
 
-```bash
+
+## What's inside
+
+- **Hero section** with a typing role animation and tech stack pills
+- **Projects showcase** with live/repo links
+- **Tech Stack section** with filterable categories
+- **Contact form** powered by Nodemailer — emails land directly in my inbox
+- **Smooth animations** via Framer Motion
+- **Fully responsive** — works on mobile, tablet, and desktop
+
+
+## Tech Stack
+
+Framework | Next.js 16 | React 19 
+Language | TypeScript 
+Styling | Tailwind CSS v4 
+Animation | Framer Motion | React Spring 
+Forms | React Hook Form | Zod validation 
+Email | Nodemailer 
+Icons | Lucide React | React Icons 
+
+
+## Getting started
+
+You'll need Node.js 18+ installed.
+
+**1. Clone the repo**
+
+git clone https://github.com/devTemilorun/devtemilorun-portfolioV2
+cd portfolio-v2
+
+**2. Install dependencies**
+
+npm install
+
+**3. Set up environment variables**
+
+Create a `.env.local` file in the root of the project and add your email credentials for the contact form:
+EMAIL_USER=your-email@gmail.com
+EMAIL_PASS=your-app-password
+
+> If you're using Gmail, generate an **App Password** from your Google Account settings (under Security → 2-Step Verification → App Passwords). Don't use your regular Gmail password here.
+
+**4. Run the dev server**
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project structure
 
-## Learn More
+portfolio-v2/
+├── app/                  # Next.js app router pages and layouts
+├── components/           # Reusable UI components (Button, SectionTitle, etc.)
+├── scenes/               # Page sections (Hero, Projects, TechStack, Contact)
+├── assets/               # Images, icons, and static data
+├── public/               # Public assets served at root
+└── app/globals.css       # Global styles and Tailwind custom utilities
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project deploys cleanly to **Vercel** with zero configuration.
 
-## Deploy on Vercel
+npm run build   # make sure it builds without errors first
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Then push to GitHub and import the repo on [vercel.com](https://vercel.com). Add your `.env.local` variables in the Vercel project settings under Environment Variables before deploying.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Contact
+
+Built by **Olawuni Israel** — if you want to work together or just say hi, hit the contact form on the site or reach me at:
+
+- GitHub: (https://github.com/devTemilorun)
+- LinkedIn: (https://linkedin.com/in/olawuni-israel)
+- Email: dev.temilorun@gmail.com
